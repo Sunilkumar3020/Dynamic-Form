@@ -22,7 +22,7 @@ export default function DynamicForm({ config }) {
             }
         ))
         if (validation) {
-            const error = validateField(value, validation);
+            const error = validationField(value, validation);
             setErrors((prev) => ({
                 ...prev,
                 [name]: error
